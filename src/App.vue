@@ -1,5 +1,6 @@
 <template>
   <div id="nav">
+    <router-link to="/">Home</router-link>
   </div>
   <router-view/>
 </template>
@@ -18,6 +19,7 @@
 }
 
 #nav a {
+  text-decoration: none;
   font-weight: bold;
   color: #2c3e50;
 }
