@@ -4,12 +4,14 @@ const routes = [
     {
         path: '/',
         name: 'Home',
-        component: () => import('../views/Home.vue')
+        component: () => import('../views/Home.vue'),
+        meta: {title: 'Todolist | All Tasks'}
     },
     {
         path: '/task/:id',
         name: 'show',
-        component: () => import('../views/Show.vue')
+        component: () => import('../views/Show.vue'),
+        meta: {title: 'Todolist | Show Task'}
     }
 ]
 
